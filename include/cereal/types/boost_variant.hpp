@@ -30,14 +30,8 @@
 #ifndef CEREAL_TYPES_BOOST_VARIANT_HPP_
 #define CEREAL_TYPES_BOOST_VARIANT_HPP_
 
-//! @internal
-#if defined(_MSC_VER) && _MSC_VER < 1911
-#define CEREAL_CONSTEXPR_LAMBDA
-#else // MSVC 2017 or newer, all other compilers
-#define CEREAL_CONSTEXPR_LAMBDA constexpr
-#endif
 
-#include "cereal/cereal.hpp"
+#include "../cereal.hpp"
 #include <boost/variant/variant_fwd.hpp>
 #include <boost/variant/static_visitor.hpp>
 

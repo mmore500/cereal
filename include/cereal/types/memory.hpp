@@ -30,7 +30,7 @@
 #ifndef CEREAL_TYPES_SHARED_PTR_HPP_
 #define CEREAL_TYPES_SHARED_PTR_HPP_
 
-#include "cereal/cereal.hpp"
+#include "../cereal.hpp"
 #include <memory>
 #include <cstring>
 
@@ -420,6 +420,7 @@ namespace cereal
 } // namespace cereal
 
 // automatically include polymorphic support
-#include "cereal/types/polymorphic.hpp"
+#include "polymorphic.hpp"
 
+#undef CEREAL_ALIGNOF
 #endif // CEREAL_TYPES_SHARED_PTR_HPP_
